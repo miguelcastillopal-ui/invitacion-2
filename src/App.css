@@ -1,0 +1,93 @@
+/* CONTENEDOR GENERAL */
+.container {
+  max-width: 420px;
+  margin: 0 auto;      /* centra horizontal */
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra TODOS los elementos */
+}
+
+/* INPUT Y SELECT */
+select,
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-size: 16px;
+
+  text-align: center; /* texto centrado */
+}
+
+.invitacion {
+  position: relative;
+  width: 100%;
+}
+
+.invitacion img {
+  width: 100%;
+  display: block;
+}
+
+/* CONTENEDOR DE TEXTO */
+.texto-overlay {
+  position: absolute;
+  top: 60px;          /* ← AJUSTE GLOBAL (solo este) */
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;           /* ← ESPACIO REAL ENTRE ESTIMADO Y NOMBRE */
+}
+
+/* ESTIMADO */
+.tratamiento-overlay {
+  font-size: 20px;
+  font-weight: bold;
+  color: #496052;
+  font-family: "Merriweather", Georgia, serif;
+}
+
+/* NOMBRE */
+.nombre-overlay {
+  font-size: 28px;
+  font-weight: 600;
+  color: #496052;
+  font-family: "Merriweather", Georgia, serif;
+  text-align: center;
+  max-width: 90%;
+  word-wrap: break-word;
+}
+
+
+/* BOTÓN DESCARGA */
+.descargar-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  font-size: 16px;
+  background: #496052;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  text-align: center;
+}
+
+.descargar-btn:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+
+h1 {
+    color: #dbd3ab;       /* Color azul */
+    font-size: 36px;       /* Tamaño de letra grande */
+    text-align: center;    /* Centrar el texto */
+    font-family: 'Arial', sans-serif; /* Fuente */
+    margin-top: 20px;      /* Espacio arriba */
+}
